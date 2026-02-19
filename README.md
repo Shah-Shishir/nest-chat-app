@@ -23,7 +23,9 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This repository contains **nest-chat-app**, a real-time chat application built with the [Nest](https://github.com/nestjs/nest) framework and Socket.IO.
+
+The project started from the official NestJS TypeScript starter template.
 
 ## Project setup
 
