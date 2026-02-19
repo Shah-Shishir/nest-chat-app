@@ -1,3 +1,9 @@
+export enum MessageType {
+  TEXT = 'TEXT',
+  VOICE = 'VOICE',
+  MEDIA = 'MEDIA',
+}
+
 export class Message {
   id: string;
   sender: {

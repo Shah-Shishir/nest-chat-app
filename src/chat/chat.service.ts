@@ -3,7 +3,7 @@ import { Socket } from 'socket.io';
 import { v4 as uuidv4 } from 'uuid';
 
 // Interfaces
-import { Message } from './entities/message.entity';
+import { Message, MessageType } from './entities/message.entity';
 import { CreateMessageDto } from './dto/create-message.dto';
 import { UpdateMessageDto } from './dto/update-message.dto';
 import { JoinedUserDto } from './dto/joined-user.dto';
@@ -61,7 +61,7 @@ export class ChatService {
         id: socket.id,
         username: createMessageDto.sender,
       },
-      type: 'TEXT',
+      type: MessageType.TEXT,
       content: createMessageDto.content,
       sentAt: new Date().toISOString(),
     };
